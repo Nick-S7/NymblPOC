@@ -10,7 +10,7 @@ const chatData: Chat[] = [
   {
     avatar: UserOne,
     name: 'Devid Heilo',
-    text: 'How are you?',
+    text: 'Order Return Request',
     time: 12,
     textCount: 3,
     color: '#10B981',
@@ -18,7 +18,7 @@ const chatData: Chat[] = [
   {
     avatar: UserTwo,
     name: 'Henry Fisher',
-    text: 'Waiting for you!',
+    text: 'Order Processing Support',
     time: 12,
     textCount: 0,
     color: '#DC3545',
@@ -26,7 +26,7 @@ const chatData: Chat[] = [
   {
     avatar: UserFour,
     name: 'Jhon Doe',
-    text: "What's up?",
+    text: "Payment Processing Support",
     time: 32,
     textCount: 0,
     color: '#10B981',
@@ -34,7 +34,7 @@ const chatData: Chat[] = [
   {
     avatar: UserFive,
     name: 'Jane Doe',
-    text: 'Great',
+    text: 'Order Return Request',
     time: 32,
     textCount: 2,
     color: '#FFBA00',
@@ -42,7 +42,7 @@ const chatData: Chat[] = [
   {
     avatar: UserOne,
     name: 'Jhon Doe',
-    text: 'How are you?',
+    text: 'Order Return Request',
     time: 32,
     textCount: 0,
     color: '#10B981',
@@ -50,7 +50,7 @@ const chatData: Chat[] = [
   {
     avatar: UserThree,
     name: 'Jhon Doe',
-    text: 'How are you?',
+    text: 'Payment Processing Support',
     time: 32,
     textCount: 3,
     color: '#FFBA00',
@@ -61,7 +61,7 @@ const ChatCard = () => {
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
       <h4 className="mb-6 px-7.5 text-xl font-semibold text-black dark:text-white">
-        Chats
+        Customer Support Chat
       </h4>
 
       <div>

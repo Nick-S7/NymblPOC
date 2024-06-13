@@ -9,6 +9,7 @@ import Calendar from './pages/Calendar';
 import Chart from './pages/Chart';
 import ECommerce from './pages/Dashboard/Dashboard';
 import Orders from './pages/Dashboard/Orders';
+import Products from './pages/Dashboard/Products';
 import FormElements from './pages/Form/FormElements';
 import FormLayout from './pages/Form/FormLayout';
 import Profile from './pages/Profile';
@@ -38,7 +39,7 @@ function App() {
           index
           element={
             <>
-              <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="eCommerce Dashboard | NymblPOC" />
               <ECommerce />
             </>
           }
@@ -53,10 +54,19 @@ function App() {
           }
         />
         <Route
+          path="/products"
+          element={
+            <>
+              <PageTitle title="Products" />
+              <Products />
+            </>
+          }
+        />
+        <Route
           path="/calendar"
           element={
             <>
-              <PageTitle title="Calendar | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Calendar | NymblPOC" />
               <Calendar />
             </>
           }
@@ -65,7 +75,7 @@ function App() {
           path="/profile"
           element={
             <>
-              <PageTitle title="Profile | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Profile | NymblPOC" />
               <Profile />
             </>
           }
@@ -74,7 +84,7 @@ function App() {
           path="/forms/form-elements"
           element={
             <>
-              <PageTitle title="Form Elements | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Form Elements | NymblPOC" />
               <FormElements />
             </>
           }
@@ -83,7 +93,7 @@ function App() {
           path="/forms/form-layout"
           element={
             <>
-              <PageTitle title="Form Layout | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Form Layout | NymblPOC" />
               <FormLayout />
             </>
           }
@@ -92,7 +102,7 @@ function App() {
           path="/tables"
           element={
             <>
-              <PageTitle title="Tables | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Tables | NymblPOC" />
               <Tables />
             </>
           }
@@ -101,7 +111,7 @@ function App() {
           path="/settings"
           element={
             <>
-              <PageTitle title="Settings | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Settings | NymblPOC" />
               <Settings />
             </>
           }
@@ -110,7 +120,7 @@ function App() {
           path="/chart"
           element={
             <>
-              <PageTitle title="Basic Chart | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Basic Chart | NymblPOC" />
               <Chart />
             </>
           }
@@ -119,7 +129,7 @@ function App() {
           path="/ui/alerts"
           element={
             <>
-              <PageTitle title="Alerts | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Alerts | NymblPOC" />
               <Alerts />
             </>
           }
@@ -128,7 +138,7 @@ function App() {
           path="/ui/buttons"
           element={
             <>
-              <PageTitle title="Buttons | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Buttons | NymblPOC" />
               <Buttons />
             </>
           }
@@ -137,7 +147,7 @@ function App() {
           path="/auth/signin"
           element={
             <>
-              <PageTitle title="Signin | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Signin | NymblPOC" />
               <SignIn />
             </>
           }
@@ -146,7 +156,7 @@ function App() {
           path="/auth/signup"
           element={
             <>
-              <PageTitle title="Signup | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Signup | NymblPOC" />
               <SignUp />
             </>
           }
