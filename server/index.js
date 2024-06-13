@@ -79,6 +79,35 @@ app.delete("/orders/:id", async(req, res) =>{
     }
 })
 
+
+
+//create a Product
+app.post("/products", async(req, res) => {
+    try {
+        //console.log(req.body);
+        const { description } = req.body;
+        const newProduct = await pool.query(
+            "INSERT INTO Products (description, p_Name, discount, availability, brand, category, rating) VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING *",
+            [description, p_Nname, discount, availability, brand, category, rating] 
+        );
+
+        res.json(newProduct.rows[0]);
+    } catch (err) {
+        console.error(err.message);
+    }
+});
+
+//get all products
+app.get("/products", async(req, res) =>{
+    try {
+        const allProducts = await pool.query("SELECT * FROM Products;");
+        res.json(allProducts.rows);
+    } catch (err) {
+        console.error(err.message);
+    }
+})
+
+
 app.listen(5000, () =>{
     console.log("listening on port 5000")
 });
