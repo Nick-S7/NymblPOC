@@ -52,7 +52,7 @@ const TableThree = () => {
                 </td>
                 <td className="border-b border-[#eee] py-5 px-4 dark:border-strokedark">
                   <p className="text-black dark:text-white">
-                    {packageItem.total_price}
+                    ${packageItem.total_price}
                   </p>
                 </td>
                 {packageDates.map((packDate, key)=>(
